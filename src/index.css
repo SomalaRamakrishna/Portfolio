@@ -1,0 +1,19 @@
+body{
+  /* background-color: rgb(3, 56, 135); */
+  background-image: linear-gradient(to right,rgb(5, 8, 160),rgb(21, 78, 163),rgb(9, 66, 152),rgb(21, 78, 163),rgb(3, 56, 135));
+  padding: 0%;
+  margin: 0%;
+  
+}
+.container{
+  /* border: 2px solid red; */
+  margin: 0%;
+  padding: 0%;
+}
+
+@media  (max-width:768px) {
+ /*  body {
+    border: 2px solid red;
+    } */
+  
+}

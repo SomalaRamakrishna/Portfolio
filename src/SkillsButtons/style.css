@@ -1,0 +1,115 @@
+.developer-skills {
+    width: 50%;
+     /* border:5px solid #041dda;  */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding-right: 20px;
+    font-family: "Kanit", serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.developer-skills .block {
+    /*  border:3px solid rgb(245, 1, 1);  */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+ .developer-skills .block .buttons {
+    /*  border:green 5px solid; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: space-between;
+}
+
+#button-name {
+    color: rgb(241, 239, 239);
+    text-align: center;
+}
+
+ .developer-skills button {
+    color: #ffffff;
+    padding: 15px;
+    opacity: 0.75;
+    text-align: center;
+    background-color: rgba(43, 104, 226, 0.725);
+    border: 2px groove #ffffff;
+    box-shadow: 2px 5px 100px rgba(241, 239, 239, 0.6);
+    border-radius: 10px;
+    font-size: 14px;
+    height: 60px;
+    width: 150px;
+}
+
+ .developer-skills button:hover {
+    box-shadow: 2px 5px 10px #0432ca;
+    transform: scale(1.1);
+    transition: all 0.5s;
+    cursor: pointer;
+    border: 2px groove #041dda;
+    color: rgba(28, 2, 222, 0.937);
+    background-color: rgba(248, 248, 248, 0.971);
+    padding: 20px;
+}
+
+
+/* mobile devies */
+@media (max-width: 768px) {
+
+    .developer-details {
+          background: url("developer_background2.jpeg");
+    margin-top: 5px;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "Kanit", serif;
+      font-weight: 200;
+      font-style: normal;
+        background-size: cover;
+    }
+
+
+
+.developer-skills {
+        width: 100%;
+        /*  border:5px solid #041dda; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        padding: 0%;
+    }
+
+.developer-skills .block {
+        /* border:3px solid rgb(245, 1, 1); */
+        width: 100%;
+
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+    }
+
+.developer-skills .block .buttons {
+        /*  border:green 5px solid; */
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+
+
+
+}

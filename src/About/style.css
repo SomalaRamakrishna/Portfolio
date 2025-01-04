@@ -1,0 +1,75 @@
+.developer-about {
+    margin: 0px;
+    width: 99%;
+    height: auto;       
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* border: 2px solid red; */
+    border-radius: 0px;
+    padding:0%;
+    padding: 3% 0%;
+    width: 100%;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.user-icon{
+    font-size: 1em;
+     color: white;
+    transition: transform 0.9s linear;
+}
+
+h2 {
+    margin: 1rem 0; 
+    font-size: 3rem;
+    font-weight: 500;
+    color:  #f4eff1; 
+    border-left: 1px solid white; 
+    padding-left: 10px;   
+    font-family: "Kanit", serif;
+}
+
+p {
+    font-size: 1.5rem;
+    /* Adjust paragraph font size */
+    line-height: 1.5;
+    /* Adjust line spacing for better readability */
+    margin-bottom: 1rem;
+    /* Add some margin for spacing between paragraphs */
+    color: #f5f5f5;
+    padding: 0% 10%;
+    text-align: center;
+    font-family: "Kanit", serif;
+    font-family: "Kanit", serif;
+    font-weight: 100;
+    font-style: normal;
+        
+}
+
+
+
+/* Responsiveness (optional) */
+@media (max-width: 768px) {
+.main-content {
+        justify-content:center;
+     /*    border: 2px solid red;  */
+        padding: 0%;        
+    }
+
+    
+
+    h2 {
+        padding-left: 10px;
+        padding-right:10px ;
+        font-family: "Kanit", serif;
+    }
+
+    p {
+        padding: 0% 5%; 
+    }
+
+}
+

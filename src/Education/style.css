@@ -1,0 +1,260 @@
+.developer-education {
+    /* border: 5px solid rebeccapurple; */
+    background-image: url("blue10.webp");
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+/* Education.css */
+.education-container {
+  
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    /* Use a suitable font */
+    position: relative;
+    /* For positioning the laptop absolutely */
+}
+
+.education-heading {
+    font-size: 3rem;
+    
+    margin-bottom: 0px;
+    text-align: center;
+    
+    border-bottom:  1px solid rgb(128, 189, 189);
+    color: #94cad0;
+    width: 100%;
+    justify-self: end;
+    padding-top: 30px;
+    font-family: "Kanit", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+.education-list {
+    width: 80%;
+    /* Adjust as needed */
+    max-width: 800px;
+    /* Set a maximum width */
+}
+
+.education-item {
+    background-color: #001f3f; 
+    border: 1px solid white;
+    /* Start with transparent border */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    /* Smooth transitions */
+    cursor: pointer;
+    /* Indicate it's clickable */
+}
+
+.education-item:hover {
+    transform: scale(1.03);
+    /* Slightly scale up on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Add a subtle shadow */
+    background-image: linear-gradient(to right,#870ce44d, rgba(200, 5, 142, 0.9), #870ce44d);
+    /* Darker background on hover */
+    border-image: linear-gradient(to right, #00FFFF, #8A2BE2);
+    border-image-slice: 1;
+    transition: all 0.8s ease-in-out;
+    border-radius: 0;
+}
+
+.education-item:active {
+    transform: scale(0.98);
+}
+
+/* Gradient border on hover */
+.education-item.gradient-border-hover {
+    border: 2px solid transparent;
+    transition: border-image 0.3s ease;
+}
+
+.education-item.gradient-border-hover:hover {
+    border-image: linear-gradient(to right, #00FFFF, #8A2BE2);
+    border-image-slice: 1;
+}
+
+.education-date {
+    font-size: 0.9em;
+    color: #9ca3af;
+    margin-right: 20px;
+    min-width: 100px;
+    background-image: linear-gradient(to right, #00FFFF, #8A2BE2);
+    -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+.education-details {
+    flex-grow: 1;
+    background-image: linear-gradient(to right, #00FFFF, #8A2BE2);
+    -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap:5px;
+}
+
+.education-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-image: linear-gradient(to right, #00FFFF, #8A2BE2);
+    -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.isometric-laptop {
+    width: 30rem;
+    height: 27rem;
+    /* border: #00FFFF 2px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    overflow: hidden;
+    /* Important: Prevents image overflow during animation */
+}
+
+.isometric-laptop img {
+    width:20rem;
+    height: 20rem;
+    display: block;
+   /*  border: #00FFFF 5px solid; */
+    animation: moveLaptop 10s linear infinite alternate;
+}
+.visit-edu {
+    display: inline-block;
+    /* Or block, depending on layout needs */
+    margin-top: 10px;
+    
+    /* Adjust spacing as needed */
+}
+
+.visit-edu button {
+    background-color: inherit;
+    /* Same background as education items */
+    color: #0bafeb;
+    border: 2px solid transparent;
+    /* Start with transparent border */
+    padding: 10px 20px;
+    /* Adjust padding as needed */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    /* Adjust font size as needed */
+    border-image: linear-gradient(to right, #00FFFF, #8A2BE2);
+    border-image-slice: 1;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, border-image 0.2s ease-in-out;
+}
+
+.visit-edu button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background-color: #0f0f0f;
+    border-image: linear-gradient(to right, #00FFFF, #8A2BE2);
+    border-image-slice: 1;
+}
+
+.visit-edu button:active {
+    transform: scale(0.5);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+/* Gradient border on hover */
+.visit-edu button.gradient-border-hover {
+    border: 2px solid transparent;
+    transition: border-image 0.3s ease;
+}
+
+.visit-edu button.gradient-border-hover:hover {
+    border-image: linear-gradient(to right, #00FFFF, #8A2BE2);
+    border-image-slice: 1;
+}
+@keyframes moveLaptop {
+    0% {
+        transform: translate(0, 0) rotate(30deg);
+        /* Start position */
+    }
+
+    50% {
+        transform: translate(20px, -10px) rotate(15deg);
+        /* Move right and up slightly, scale up */
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(10deg)
+            /* Return to start position */
+    }
+}
+
+
+
+
+
+/* Responsive adjustments (Example) */
+@media (max-width: 768px) {
+   
+
+.developer-education {
+       /*  border: 5px solid rgb(213, 195, 26); */ 
+        background-size: cover;
+        overflow: hidden;
+        margin: 0%;
+    }
+
+    /* Education.css */
+    .education-container {
+        padding: 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .education-heading {
+        margin: 0px;
+        border-bottom: 1px solid rgb(128, 189, 189);
+        color: #94cad0;
+        width: auto;
+        justify-self: center;
+        padding:0px 6%;   
+    }
+
+    .education-list {
+        width: 90%;
+       /*  border: 3px solid green; */
+        /* Adjust as needed */
+        max-width: 800px;
+        /* Set a maximum width */
+    }
+
+    .education-item {
+         padding: 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .education-item:hover {
+            background-image: linear-gradient(to right, #870ce44d, purple);
+        }
+   
+}
+
+
+
+
+
+

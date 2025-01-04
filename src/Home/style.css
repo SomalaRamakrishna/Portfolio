@@ -1,0 +1,150 @@
+/*About Developer Here */
+
+.developer-details {
+  /*    border: 5px solid rebeccapurple;  */
+    background: url("developer_background2.jpeg");
+    margin-top: 0px;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "Kanit", serif;
+      font-weight: 200;
+      font-style: normal;
+}
+
+.developer-details .developer-sub-containers {
+    margin-bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    /* border: 2px solid yellow; */
+}
+
+.developer-details .developer-sub-containers .developer-photo {
+    width: 60%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items:center;
+    /*  border: 3px solid red;  */
+    padding-right: 10px;
+}
+.developer-details .developer-sub-containers .developer-photo {
+    /* border:3px solid  #041dda; */
+    display: flex;
+    gap:1px;
+    justify-content:space-around;
+}
+
+
+  .developer-details .developer-sub-containers .developer-photo .circle-rotate {
+    /* border-radius: 50%; */
+    outline-offset: 40px;
+ 
+    display: flex;
+    justify-content:start ;
+    align-items: center;
+    width: 550px;
+    height: 550px;
+    /* border: 6px solid red; */
+}
+#name{
+color: white;
+ font-size:50px;
+  display:flex;
+   justify-content:start;
+    text-shadow:1px 5px 10px rgba(1, 213, 255, 0.948);
+}
+
+  .developer-details .developer-sub-containers .developer-photo .developerimage {
+     width: 400px;
+    height: 400px;
+     border-radius: 50%; 
+     border: 2px solid rgba(1, 213, 255, 0.948);
+    outline: 10px solid rgba(6, 38, 246, 0.552);
+    outline-offset: 20px;
+     box-shadow: 2px 20px 150px rgb(43, 0, 255), 2px -2px 150px rgb(43, 0, 255); 
+     animation: circleForPhoto 10s ease-in 1s infinite; 
+    transition: transform 5s;
+    transform: rotate(4deg); 
+}
+
+@keyframes circleForPhoto {
+  0%{
+  box-shadow: 2px 20px 150px rgb(43, 0, 255), 2px -2px 150px rgb(43, 0, 255);
+  
+  }
+    50% {
+        outline: 10px solid rgba(11, 200, 238, 0.7);
+        transform: rotate(8deg);
+        
+    }
+
+    75% {
+         outline: 10px solid rgba(11, 200, 238, 0.5); 
+      /*   box-shadow: 1px 1px 50px rgb(43, 0, 255);  */
+    }
+            100% {
+            box-shadow: 2px 20px 150px rgb(43, 0, 255), 2px -2px 150px rgb(43, 0, 255);
+      
+            }
+
+}
+.developer-details .developer-sub-containers .developer-skills {
+ /*  border:2px solid red; */
+  width:50%;
+ margin-right: 1%;
+ height: 100%;
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+
+  .developer-details {
+    padding-top: 40px;/* modified */
+    background-size: cover;
+  }
+    .developer-details .developer-sub-containers {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    
+    }
+    .developer-details .developer-sub-containers .developer-photo {
+          width: 100%;
+          height: auto;
+          padding-right: 0px;
+          
+        }
+    .developer-details .developer-sub-containers .developer-photo .dev {
+                  /* border: 3px solid red; */
+                  width: 100%;
+                  height: auto;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: flex-end;
+                  align-items: center;
+                  gap:30px;
+                }
+    
+        .developer-details .developer-sub-containers .developer-photo .circle-rotate {
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          padding: 0%;
+          margin: 0%;
+        }
+
+        
+    
+        .developer-details .developer-sub-containers .developer-photo .developerimage {
+          width: 80%;
+          height: 80%;         
+        }
+        
+               
+      }
